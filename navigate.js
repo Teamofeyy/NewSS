@@ -9,18 +9,18 @@ const stack = createStackNavigator();
 
 export default function Navigate() {
     return <NavigationContainer>
-        <Stack.Navigator>
-            <Stack.Screen 
+        <stack.Navigator>
+            <stack.Screen 
                 name="Main"
                 component={Main}
                 options={{title: "Главная"}}
                 />
-            <Stack.Screen 
+            <stack.Screen 
                 name="Contact"
                 component={Contacts}
                 options={{title: "Контакты"}}
                 />
-        </Stack.Navigator>
+        </stack.Navigator>
     </NavigationContainer>;
 }
 
